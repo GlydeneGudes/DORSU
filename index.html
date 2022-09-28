@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<title>DORsu Webpage</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  
+
+
+</head>
+<!-- Top Bar Nav -->
+    <nav class="w-full py-2 bg-blue-800 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+            <div class="flex items-center text-lg no-underline text-white pr-6">
+                <a class="" href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="pl-6" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="pl-6" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="pl-6" href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+<!--header-->
+<body>
+
+
+	<div class="flex flex-col items-center py-0 w-full headerc" style="background-image:url('https://dorsu.edu.ph/wp-content/uploads/2021/10/background.jpg')">
+
+  <img src="https://dorsu.edu.ph/wp-content/uploads/2021/12/LOGO-2.png" width="520"></a>
+</div>
+    <!--close header-->
+
+    <!-- Topic Nav -->
+    <nav class="sticky top-0 py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-3 py-2">
+
+
+
+<button  title="Toggle Theme" onclick="theme()" class="w-12 h-6 rounded-full p-1 bg-gray-400 dark:bg-gray-600 relative transition-colors duration-500 ease-infocus:outline-none   focus:ring-2 focus:ring-blue-700 dark:focus:ring-blue-600 focus:border-transparent">
+      <div id="toggle"class="rounded-full w-4 h-4 bg-blue-600 dark:bg-blue-500 relative ml-0 dark:ml-6 pointer-events-none transition-all duration-300 ease-out">
+      </div>
+</button>
+
+
+  <script>
+   function theme(event) {
+       console.log('theme')
+      document.documentElement.classList.toggle('dark')
+    }
+  </script>
+
+<!-- imitate dark mode styles enabled -->
+<style>
+   html.dark {
+        --tw-bg-opacity: 1;
+        background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+    }
+   
+   html.dark .dark\:ml-6 {
+        margin-left: 1.5rem;
+    }
+
+   html.dark .dark\:bg-blue-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+    }
+</style>
+
+
+                <a href="#" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">Home</a>
+                <a href="#About" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">About</a>
+                <a href="#Academics" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">Academics</a>
+                <a href="#Campuses" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">Campuses</a>
+                <a href="#Research" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">Research</a>
+                <a href="#Students" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">Students</a>
+                <a href="#Resource" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">Resource</a>
+                <a href="#Admissions" class="hover:bg-cyan-400 rounded py-2 px-4 mx-2">Admissions</a>
+                
+
+            </div>
+
+        </div>
+    </nav>
+<!-- TOPIC Nav CLose-->
+
+<!-- Home-->
+
+<div class="container mx-auto flex flex-wrap py-6">
+
+        <!-- Posts Section -->
+        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <a href="#Home"> </a>
+                    <img src="https://pr1.nicelocal.ph/2NGsmcQ1jMDwHK6kyEBkxw/1500x1125,q75/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2etKEYmSDdfaUHeqGKyvsj8kyMSZBL0cW_0XpsTgNWz-GT76MPFg0u_zhcEqD6VK1w">   
+            </article>
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+            <div class="w-full bg-yellow-500 text-center shadow flex flex-col my-4 p-6 rounded">
+                <p class="text-xl font-semibold pb-5">A Univerity of Execellence, Innovation and Inclusion.</p>
+            </div>
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">Overview</p>
+                <div class="grid grid-cols-3 gap-3">
+                    <img class="hover:opacity-75" src="https://pr0.nicelocal.ph/cMC-YJLdv9xnW7vbDdP-HQ/1500x844,q75/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2X6jevj2UuqelUGYEryt5JJO3kFBiQ_Z7nwznVX1k4Ro4M6VHb4g35GMFCwER6ENQw">
+                    <img class="hover:opacity-75" src="http://the-post-assets.sgp1.digitaloceanspaces.com/2021/03/thumbnail-DOSCSCT.jpg">
+                    <img class="hover:opacity-75" src="https://lh3.googleusercontent.com/p/AF1QipOnx3cVSe57pi3SDBwE7qMKAvAuegohqmSBPvuO=w600-k">
+                    <img class="hover:opacity-75" src="https://pr0.nicelocal.ph/Xkzd49EBDLoDItp0ZrCjnw/1500x1125,q75/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2a5Nb5pryd4MDKozEt8NukH9up2mSWGd3lhHxQFugpGaqJNv10T1IVa1xKWjYyOlUQ">
+                    <img class="hover:opacity-75" src="https://pr1.nicelocal.ph/MrM8wURZGZFGZDetFDqLEQ/1500x1125,q75/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2cSHb03FyIGaZMwIlPfufVOIbnvDEaOZ3Kxwcrlw7oXk9n13lSqVm6JKhiEcNx_Ipg">
+                    <img class="hover:opacity-75" src="https://lh3.googleusercontent.com/p/AF1QipNNHPfPORqi-jikA6nOpFMzLqsjXLJQXUvNVhdC=s1600-w400">
+                    <img class="hover:opacity-75" src="https://lh3.googleusercontent.com/p/AF1QipO93furKvA3EqrrbyU3IX6sRIH1OBxJdjhIND7c=w600-k">
+                    <img class="hover:opacity-75" src="https://lh3.googleusercontent.com/p/AF1QipN8WaVJQxBXd0A-TNBjhgAk1yLMpiFDXEKAW5XS=w600-k">
+                    <img class="hover:opacity-75" src="https://lh3.googleusercontent.com/p/AF1QipOAr827h6OYjFpE3m_a2pv4S94AgIkxi6cbpwNL=w600-k">
+                    
+                </div>
+            </div>
+        </aside>
+    </div>
+
+
+<!-- About-->
+<!-- Article Image -->
+
+<div class="flex justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4">
+    <div class="flex flex-col justify-center items-center " id ="About">
+        <div class="text-white text-3xl font-medium font-serif">DAVAO ORIENTAL STATE UNIVERSITY NEWS AND EVENTS</div>
+        <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center ">
+
+            <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent border-solid border-2 md:w-[33%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+                        <div class="flex flex-col  items-center justify-center text-center">
+                            <img src="https://dorsu.edu.ph/wp-content/uploads/2022/09/ENZO2-520x245.jpg" alt="" class="rounded-md" />
+                            <div class="font-bold decoration-2 py-2 rounded-lg px-2 md:px-5">
+                                DOrSU, OCVM sign MOA for Educational Assistance Program
+                            </div>
+                            <div class="text-black-600">SEPTEMBER 20, 2022</div>
+                            <div class="text-grey-600 font-medium m-2"> Dr. Roy G. Ponce, President of DorSU, and Vice Mayor Lorenzo Leon G. Rabat, representing the Office of the City Vice Mayor (OCVM),
+                                 signed a Memorandum of Agreement (MOA) for the "Ka-asENZO" Thesis Educational Assistance Program (TEAP) to help indigent students cope with the financial challenges in pursuing a college education.</div><br><br><br>
+                            
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent border-solid border-2 md:w-[33%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+                        <div class="flex flex-col  items-center justify-center text-center">
+                            <img src="https://dorsu.edu.ph/wp-content/uploads/2022/09/6-520x245.jpg" alt="" class="rounded-md" />
+                            <div class="font-bold decoration-2 py-2 rounded-lg px-2 md:px-5">
+                                DOrSU plans a new graduate program, subjects Teacher Development faculty to research mentoring
+                            </div>
+                            <div class="text-black-600">SEPTEMBER 19, 2022</div>
+                            <div class="text-grey-600 font-medium m-2"> The Davao Oriental State University planned to establish a Master in Education (MEd) by Coursework program and subjected
+                                 Teacher Development faculty from the Institute of Education and Teacher Training to research mentoring by Dr. Dennis Alonzo from the University of New South Wales on September 23, 2022, at the University Learning and Information Resource Center.</div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent border-solid border-2 md:w-[33%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+                        <div class="flex flex-col  items-center justify-center text-center">
+                            <img src="https://dorsu.edu.ph/wp-content/uploads/2022/09/th-2022-09-18T213221.567-520x245.jpg" alt="" class="rounded-md" />
+                            <div class="font-bold decoration-2 py-2 rounded-lg px-2 md:px-5">
+                                DOrSU plans a new graduate program, subjects Teacher Development faculty to research mentoring
+                            </div>
+                            <div class="text-black-600">SEPTEMBER 18, 2022</div>
+                            <div class="text-grey-600 font-medium m-2"> The Davao Oriental State University planned to establish a Master in Education (MEd) by Coursework program and subjected
+                                 Teacher Development faculty from the Institute of Education and Teacher Training to research mentoring by Dr. Dennis Alonzo from the University of New South Wales on September 23, 2022, at the University Learning and Information Resource Center.</div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+    <div class="flex justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4">
+    <div class="flex flex-col justify-center items-center ">
+        <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center ">
+
+            <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent border-solid border-2 md:w-[33%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+                        <div class="flex flex-col  items-center justify-center text-center">
+                            <img src="https://dorsu.edu.ph/wp-content/uploads/2022/09/ENZO2-520x245.jpg" alt="" class="rounded-md" />
+                            <div class="font-bold decoration-2 py-2 rounded-lg px-2 md:px-5">
+                                DOrSU, OCVM sign MOA for Educational Assistance Program
+                            </div>
+                            <div class="text-black-600">August 20, 2022</div>
+                            <div class="text-grey-600 font-medium m-2"> Dr. Roy G. Ponce, President of DorSU, and Vice Mayor Lorenzo Leon G. Rabat, representing the Office of the City Vice Mayor (OCVM),
+                                 signed a Memorandum of Agreement (MOA) for the "Ka-asENZO" Thesis Educational Assistance Program (TEAP) to help indigent students cope with the financial challenges in pursuing a college education.</div><br><br><br>
+                            
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent border-solid border-2 md:w-[33%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+                        <div class="flex flex-col  items-center justify-center text-center">
+                            <img src="https://dorsu.edu.ph/wp-content/uploads/2022/08/PROF-WIART-520x245.jpg" alt="" class="rounded-md" />
+                            <div class="font-bold decoration-2 py-2 rounded-lg px-2 md:px-5">
+                                French Scientist to engage as an Adjunct Professor at DOrSU
+                            </div>
+                            <div class="text-black-600">August 19, 2022, 2022</div>
+                            <div class="text-grey-600 font-medium m-2"> Dr. Roy G. Ponce, President of DorSU, and Vice Mayor Lorenzo Leon G. Rabat, representing the Office of the City Vice Mayor (OCVM),
+                                 signed a Memorandum of Agreement (MOA) for the "Ka-asENZO" Thesis Educational Assistance Program (TEAP) to help indigent students cope with the financial challenges in pursuing a college education.</div><br><br><br>
+                            
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Academics-->
+
+
+<nav class="w-full py-2 bg-blue-800 shadow" id="Academics">
+        <div class="text-white text-3xl font-medium font-serif text-center">INSTITUTES AND DEPARTMENT</div>
+
+  <div class="flex justify-center bg-yellow-500 p-4">
+    <div class="flex flex-col justify-center items-center ">
+
+        <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center ">
+
+<!--IALS-->
+            <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent md:w-[100%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+  
+                        </div>
+                         <div class="flex-1 text-blue-800 text-center bg-stone-200 w-100 h-100 m-2 rounded">
+                    <img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ials-1-300x150.png" alt="" />
+                </div>
+                    </div>
+                </div>
+
+<!--IBPA-->
+                 <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent md:w-[100%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+  
+                        </div>
+                         <div class="flex-1 text-blue-800 text-center bg-stone-200 w-100 h-100 m-2 rounded">
+                    <img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ibpa-1-300x150.png" alt="" />
+                </div>
+                    </div>
+                </div>
+
+<!--ICE-->
+                 <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent md:w-[100%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+  
+                        </div>
+                         <div class="flex-1 text-blue-800 text-center bg-stone-200 w-100 h-100 m-2 rounded">
+                    <img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ice-1-300x150.png" alt="" />
+                </div>
+                    </div>
+                </div>
+          </div>
+    </div>
+</div>
+
+
+      <div class="flex justify-center bg-yellow-500 p-4">
+        <div class="flex flex-col justify-center items-center ">
+        <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center ">
+
+<!--IEET-->
+                 <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent md:w-[100%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+  
+                        </div>
+                         <div class="flex-1 text-blue-800 text-center bg-stone-200 w-100 h-100 m-2 rounded">
+                    <img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ieet-300x150.png" alt="" />
+                </div>
+                    </div>
+                </div>
+
+
+<!--INAHS-->
+                 <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent md:w-[100%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+  
+                        </div>
+                         <div class="flex-1 text-blue-800 text-center bg-stone-200 w-100 h-100 m-2 rounded">
+                    <img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/12/INAHS-1-300x150.png" alt="" />
+                </div>
+                    </div>
+                </div>
+
+
+<!--PRE-SCHOOL-->
+                 <div class="overflow-hidden w-full m-4 flex justify-center bg-transparent md:w-[100%] px-8">
+
+                <div class="flex flex-col md:flex-row items-center justify-center  ">
+                    <div class="  items-center justify-center flex py-2">
+  
+                        </div>
+                         <div class="flex-1 text-blue-800 text-center bg-stone-200 w-100 h-100 m-2 rounded">
+                    <img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/PRE-SCHOOL-300x113.png" alt="" />
+                </div>
+                    </div>
+                </div>
+
+            </div>
+     </div>
+  </div>
+</div>
+
+
+
+<nav class="w-full py-2 bg-blue-800">
+        <div class="text-white text-3xl font-medium font-serif text-center">QUALITY POLICY</div>
+
+  <div class="flex justify-center bg-yellow-500 p-4">
+    <div class="flex flex-col justify-center items-center ">
+
+        <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center ">
+          <p class="text-sm text-center">DAVAO ORIENTAL STATE COLLEGE OF SCIENCE AND TECHNOLOGY is an educational institution established and sustained by quality education. It seeks to successfully implement and improve its Quality Management System (QMS) in order to better serve its students and the community, further contributing to nation building. To sustain this culture of quality, DOSCST is committed to:
+Deliver only quality education, research and extension to its stakeholders; Offer relevant and value-adding programs that are fit to the industry needs of the country;
+Sustain a conductive environment for learning, research and extension through continuous training of its workforce and by making available sufficient facilities and other infrastructure;
+Comply with all applicable legal requirements and other regulations it is obliged to adhere to; Serve its stakeholders better by implementing value-adding improvements using different tools such as Risk Management and 5S; and
+Transfer organizational knowledge to other institutions that will benefit from DOSCST's expertise in implementing a QMS.</p>
+
+        </div>
+
+        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+            <article class="flex flex-col shadow my-4">
+                    <img src="http://the-post-assets.sgp1.digitaloceanspaces.com/2022/02/CAMPUS-3-15.png">   
+            </article>
+        </section>
+      </div>
+    </div>
+  </nav>
+
+        <div class="grid grid-cols-2 my-3 text-center md:grid-cols-4" id="Campuses">
+            <div class="flex flex-col leading-7 items-start ml-20">
+                <h1 class="text-white text-2xl font-semibold font-serif">CAMPUSES</h1>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">BANAYBANAY CAMPUS</a> </p>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">CATEEL CAMPUS</a> </p>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">SAN ISIDRO CAMPUS</a> </p>
+                
+            </div>
+            <div class="flex flex-col leading-7">
+                <h1 class="text-white text-2xl font-semibold font-serif">STUDENT SERVICES</h1>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">GCTC </a> </p>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">OSA</a> </p>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">HSU</a> </p>
+               
+            </div>
+            <div class="flex flex-col my-6 leading-7 md:my-0">
+                <h1 class="text-white text-2xl font-semibold font-serif">Admission Requirments</h1>
+            
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">Under Graduate</a> </p>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">Grad School</a> </p>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">Pre School</a> </p>
+                
+            </div>
+            <div class="flex flex-col my-6 leading-7 md:my-0">
+                <h1 class="text-white text-2xl font-semibold font-serif">Contact Us</h1>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">hhtps://www.doscst.edu.ph/</a> </p>
+                <p> <a class="text-yellow-200 hover:text-cyan-600" href="#">(087)388 3195</a> </p>
+            </div>
+        </div>
+
+
+
+
+
+
+<div class="pt-4 mt-4 font-awesome text-yellow-500 border-t border-black-500 text-center"> Davao Oriental State University © 2022. All Rights Reserved.</div>
+
+</body>
+</html>
